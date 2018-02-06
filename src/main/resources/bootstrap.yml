@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo
+  cloud:
+    config:
+      label: master
+      server:
+        bootstrap: true
+  datasource:
+    schema: classpath:schema-jdbc.sql
+    data: classpath:data-jdbc.sql
+  profiles:
+    active: jdbc
+management:
+  security:
+    enabled: false
