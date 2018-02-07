@@ -11,6 +11,7 @@ spring:
       server:
         bootstrap: true
   datasource:
+    continue-on-error: true
     schema: classpath:schema-jdbc.sql
     data: classpath:data-jdbc.sql
   profiles:
