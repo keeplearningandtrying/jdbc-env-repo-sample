@@ -20,6 +20,8 @@ public class ApplicationTests {
     public void greetAndResponseContainsNameFromDatabase() {
         String response = service.greet("Hello");
 
-        assertThat(response).isEqualTo("Hello, my name is Demo");
+        assertThat(response)
+                .doesNotContain("Default")
+                .contains("Demo");
     }
 }
