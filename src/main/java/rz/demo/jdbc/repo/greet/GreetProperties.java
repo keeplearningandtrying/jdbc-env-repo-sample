@@ -2,13 +2,13 @@ package rz.demo.jdbc.repo.greet;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Rashidi Zin, GfK
  */
 @Data
-@Configuration
+@Component
 @ConfigurationProperties(prefix = "app.greet")
 public class GreetProperties {
 
