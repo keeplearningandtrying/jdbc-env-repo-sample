@@ -1,7 +1,6 @@
 package rz.demo.jdbc.repo.greet;
 
 import lombok.AllArgsConstructor;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,10 +10,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreetService {
 
-    private Environment environment;
+    private GreetProperties properties;
 
     public String greet(String greet) {
-        return String.format("%s, my name is %s", greet, environment.getProperty("app.greet.name"));
+        return String.format("%s, my name is %s", greet, properties.getName());
     }
 
 }
