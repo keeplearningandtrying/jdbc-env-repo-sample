@@ -109,7 +109,7 @@ app:
     name: Default
 ```
 
-We will have a [GreetService][12] which will retrieve the value for `app.greet.name`.
+We will have [GreetService][12] which will retrieve the value of `app.greet.name` from [GreetProperties][14].
 
 ```java
 @AllArgsConstructor
@@ -164,3 +164,4 @@ By executing `greetAndResponseContainsNameFromDatabase()` we verify that the ret
 [11]: src/main/resources/application.yml
 [12]: src/main/java/rz/demo/jdbc/repo/greet/GreetService.java
 [13]: src/test/java/rz/demo/jdbc/repo/ApplicationTests.java
+[14]: src/main/java/rz/demo/jdbc/repo/greet/GreetProperties.java
